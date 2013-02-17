@@ -1,5 +1,10 @@
 Translator::Application.routes.draw do
+  resources :translations
+
+
   get "static_pages/home"
+  get "static_pages/correct"
+  get "static_pages/incorrect"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,12 +1,70 @@
-<h1>Old English Translator Challenge</h1>
+<h1>Old English Translator Challenge</h1> 
+<h3>by Samantha Scharr</h3>
+
+	<p>The Anglo-Saxon's were big fans of riddles. Below is a short riddle for 
+		you to translate. Best of luck!
 	<p>
-		Instructions: When you click on a word a selection of 4 possible Mondern 
-		English words will appear. Select your best guess at what the OE word
-		translates to. When you have completed the sentence click the submit
-		button and you will be told if your translation is correct or not.
+		<b>Instructions:</b> When you click on a word a selection of 4 possible Mondern 
+		English words will appear. Select your best guess at what the Old English word
+		translates to. When you are done click the submit button and you will be 
+		told if your translation is correct or not. 
 	</p>
 	<p>
 		Note: The translation will not be in idiomatic Modern English due to
 		changes in grammar over time.
 	</p>
-		
+
+<div id="riddle">
+<%= form_tag do |format| %>
+Ic &#254;a wiht geseah &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on weg feran;<br>
+<%= select( "translation", "id", { "I" => "1", "You" => "2", "Them" => "3", "We" => "4"}) %>
+<%= select( "translation", "id", { "this" => "1", "that" => "2", "what" => "3", "which" => "4"}) %>
+<%= select( "translation", "id", { "weight" => "1", "house" => "2", "creature" => "3", "lift" => "4"}) %>
+<%= select( "translation", "id", { "saw" => "1", "went" => "2", "lost" => "3", "sought" => "4"}) %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= select( "translation", "id", { "in" => "1", "on" => "2", "at" => "3", "by" => "4"}) %>
+<%= select( "translation", "id", { "path" => "1", "way" => "2", "gorge" => "3", "ruins" => "4"}) %>
+<%= select( "translation", "id", { "shout" => "1", "flow" => "2", "flower" => "3", "go" => "4"}) %>
+<br>
+
+heo w&#230;s wr&#230;tlice &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wundrum gegierwed.<br>
+<%= select( "translation", "id", { "she" => "1", "them" => "2", "her" => "3", "his" => "4"}) %>
+<%= select( "translation", "id", { "went" => "1", "were" => "2", "was" => "3", "what" => "4"}) %>
+<%= select( "translation", "id", { "frightful" => "1", "magnificent" => "2", "hideous" => "3", "wondrous" => "4"}) %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= select( "translation", "id", { "wonderfully" => "1", "woefully" => "2", "disgustingly" => "3", "beautifully" => "4"}) %>
+<%= select( "translation", "id", { "gilded" => "1", "fitted" => "2", "adorned" => "3", "embroidered" => "4"}) %>
+<br>
+
+Wundor wear&#240; on wege:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; w&#230;ter wear&#240; to bane. <br>
+<%= select( "translation", "id", { "woe" => "1", "wonder" => "2", "beauty" => "3", "disgusting" => "4"}) %>
+<%= select( "translation", "id", { "becomes" => "1", "manages" => "2", "works" => "3", "weathers" => "4"}) %>
+<%= select( "translation", "id", { "by" => "1", "at" => "2", "on" => "3", "in" => "4"}) %>
+<%= select( "translation", "id", { "ruins" => "1", "gorge" => "2", "path" => "3", "way" => "4"}) %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%= select( "translation", "id", { "land" => "1", "welts" => "2", "hills" => "3", "water" => "4"}) %>
+<%= select( "translation", "id", { "weathers" => "1", "becomes" => "2", "manages" => "3", "works" => "4"}) %>
+<%= select( "translation", "id", { "open" => "1", "upon" => "2", "to" => "3", "over" => "4"}) %>
+<%= select( "translation", "id", { "bone" => "1", "bother" => "2", "bane" => "3", "bath" => "4"}) %>
+</div> 
+<br>
+
+<%= submit_tag "Submit"%>
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
