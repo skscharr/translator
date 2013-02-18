@@ -37,6 +37,12 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem "heroku"
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg'
 end
