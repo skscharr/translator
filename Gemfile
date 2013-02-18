@@ -37,7 +37,10 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem "heroku"
+source "https://rubygems.org"
+gem "nokogiri"
+gem "rack", "~>1.1"
+gem "rspec", :require => "spec"
 
 group :development, :test do
   gem 'sqlite3'
