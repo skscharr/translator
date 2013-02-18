@@ -1,4 +1,5 @@
 Translator::Application.routes.draw do
+  root :to => "challenges#new"
   resources :challenges
 
 
