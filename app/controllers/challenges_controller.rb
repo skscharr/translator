@@ -48,7 +48,7 @@ class ChallengesController < ApplicationController
         format.html { render "static_pages/correct" }
         format.json { render json: @challenge, status: :created, location: @challenge }
       else
-        format.html { render "static_pages/incorrect" }
+        format.html { render "challenges/new" }
         format.json { render json: @challenge.errors, status: :unprocessable_entity }
       end
     end
