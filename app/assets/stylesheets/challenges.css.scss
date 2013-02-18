@@ -1,3 +1,37 @@
 // Place all the styles related to the challenges controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+font-family: 'garamond', serif;
+font-size: 14px;
+}
+
+#riddle {
+  font-size: 24px;
+  margin-left: 5px;
+  line-height: 24px;
+}
+
+.page h1 {
+font-size: 36px;
+line-height: 36px;
+}
+
+.page h3 {
+font-size: 20px;
+margin-left: 75px;
+margin-top: -15px;
+}
+
+.page p {
+margin-left: 5px;
+width: 750px;
+font-size: 14px;
+}
+
+.page img {
+float: right;
+z-index: -1;
+margin: 25px;
+width: 300px;
+}

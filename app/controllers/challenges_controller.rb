@@ -11,6 +11,7 @@ class ChallengesController < ApplicationController
   end
 
   # GET /challenges/1
+
   # GET /challenges/1.json
   def show
     @challenge = Challenge.find(params[:id])

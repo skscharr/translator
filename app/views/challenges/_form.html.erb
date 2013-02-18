@@ -11,24 +11,35 @@
     </div>
   <% end %>
 <div id="riddle">
-&nbsp;&nbsp;&nbsp;&nbsp;Ic 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#254;a 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wiht 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geseah 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weg 
-&nbsp;&nbsp;&nbsp;&nbsp;feran
   <div class="field">
-    <%= select( "translation", "id", { "You" => "You", "Them" => "Them", "I" => "I", "We" => "We"}) %>
+  	<%= label_tag(:q1, "Ic") %>
+  	<%= select( "translation", "id", {"You"=>"You", "Them"=>"Them", "I"=>"I", "We"=>"We"})%>
+  </div>
+  <div class="field">
+    <%= label_tag(:q2, "þa") %>
     <%= select( "translation", "id", { "this" => "this", "that" => "that", "what" => "what", "which" => "which"}) %>
-    <%= select( "translation", "id", { "weight" => "weight", "house" => "house", "creature" => "creature", "lift" => "lift"}) %>
+  </div>
+  <div class="field">
+    <%= label_tag(:q3, "wiht") %>
+    <%= select( "translation", "id", { "weight" => "weight", "house" => "house", "creature" => "creature", "lift" => "lift"}) %>    
+  </div>
+  <div class="field">
+    <%= label_tag(:q4, "geseah") %>
     <%= select( "translation", "id", { "saw" => "saw", "went" => "went", "lost" => "lost", "sought" => "sought"}) %>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div class="field">   
+    <%= label_tag(:q5, "on") %>
     <%= select( "translation", "id", { "in" => "in", "on" => "on", "at" => "at", "by" => "by"}) %>
+  </div>
+  <div class="field">
+    <%= label_tag(:q6, "weg") %>
     <%= select( "translation", "id", { "path" => "path", "way" => "way", "gorge" => "gorge", "ruins" => "ruins"}) %>
+  </div>
+  <div class="field">
+    <%= label_tag(:q7, "feran") %>
     <%= select( "translation", "id", { "shout" => "shout", "flow" => "flow", "flower" => "flower", "go" => "go"}) %>
   </div>
-  
+
   <div class="actions">
     <%= f.submit "Submit"%>
   </div>
