@@ -1,5 +1,5 @@
 Translator::Application.routes.draw do
-  resources :translations
+  resources :challenges
 
 
   get "static_pages/home"

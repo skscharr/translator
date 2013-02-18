@@ -1,0 +1,36 @@
+<%= form_for(@challenge) do |f| %>
+  <% if @challenge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@challenge.errors.count, "error") %> prohibited this challenge from being saved:</h2>
+
+      <ul>
+      <% @challenge.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div id="riddle">
+&nbsp;&nbsp;&nbsp;&nbsp;Ic 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#254;a 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wiht 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;geseah 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weg 
+&nbsp;&nbsp;&nbsp;&nbsp;feran
+  <div class="field">
+    <%= select( "translation", "id", { "You" => "You", "Them" => "Them", "I" => "I", "We" => "We"}) %>
+    <%= select( "translation", "id", { "this" => "this", "that" => "that", "what" => "what", "which" => "which"}) %>
+    <%= select( "translation", "id", { "weight" => "weight", "house" => "house", "creature" => "creature", "lift" => "lift"}) %>
+    <%= select( "translation", "id", { "saw" => "saw", "went" => "went", "lost" => "lost", "sought" => "sought"}) %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%= select( "translation", "id", { "in" => "in", "on" => "on", "at" => "at", "by" => "by"}) %>
+    <%= select( "translation", "id", { "path" => "path", "way" => "way", "gorge" => "gorge", "ruins" => "ruins"}) %>
+    <%= select( "translation", "id", { "shout" => "shout", "flow" => "flow", "flower" => "flower", "go" => "go"}) %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit "Submit"%>
+  </div>
+ </div>
+<% end %>
